@@ -1,0 +1,86 @@
+body,
+html {
+    margin: 0;
+    background-color: #2f4f30;
+    color: #f5f5f5
+}
+
+.header {
+    background-color: #663399;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px
+}
+
+.carta {
+    position: relative;
+    width: 170px;
+    left: 110px;
+    margin-left: -90px
+}
+
+#mesaJugador {
+    margin-left: 50px;
+    margin-top: 50px
+}
+
+#mesaJugador small {
+    font-size: 35px;
+    color: orange
+}
+
+#computadora-cartas,
+#jugador-cartas {
+    height: 220px
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 40% auto;
+    padding: 10px;
+    border: 3px solid #888;
+    width: 75%
+}
+
+.modal-content .emoticon {
+    width: 70px
+}
+
+.textoModal {
+    color: #8a2be2;
+    font-size: 30px;
+    text-align: center
+}
+
+.textoModalPerdiste {
+    color: red;
+    font-size: 30px;
+    text-align: center
+}
+
+.textoModalGanaste {
+    color: #daa520;
+    font-size: 43px;
+    text-align: center
+}
+
+.close:focus,
+.close:hover {
+    color: #00f;
+    text-decoration: none;
+    cursor: pointer
+}

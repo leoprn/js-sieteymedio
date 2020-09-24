@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego desarrollado en Javascript vanilla, sobre el clasico juego 7 y medio">
+    <meta name="keywords" content="Juegos de Cartas, cartas españolas, siete y medio, 7 y medio">
+    <meta name="author" content="Leonardo Pegorin">
+    <title>SIETE Y MEDIO | Juego de Cartas</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles-min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js">
+</head>
+<body>
+
+    <header class="header">
+    <h2>SIETE Y MEDIO</h2>
+    <div><i>Tu Historico: Jugador: <span id="historicoJugador">0</span> | Banca: <span id="historicoBanca">0</span></i></div>
+    </header>
+
+    <div class="row mt-3">
+        <div class="col text-center" >
+            <button id="btnNuevo" class="btn btn-primary" style="font-size: 25px;">NUEVO JUEGO</button>
+            <button id="btnPedir" class="btn btn-warning">PEDIR CARTA</button>
+            <button id="btnDetener" class="btn btn-danger">RETIRARSE</button>
+
+        </div>
+    </div>
+
+    <div class="row container">
+        <div id="mesaJugador" class="col">
+            <h2>JUGADOR  -  <small>0</small></h2>
+            <div id="jugador-cartas">
+                
+                <!-- <img class="carta" src="assets/cartas/01B.png"></img>
+                <img class="carta" src="assets/cartas/05B.png"></img>
+                <img class="carta" src="assets/cartas/10B.png"></img>
+                <img class="carta" src="assets/cartas/11O.png"></img> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row container mt-3">
+        <div id="mesaJugador" class="col">
+            <h2>BANCA - <small>0</small></h2>
+            <div id="computadora-cartas">
+                <!-- <img class="carta" src="assets/cartas/01B.png"></img>
+                <img class="carta" src="assets/cartas/05B.png"></img>
+                <img class="carta" src="assets/cartas/10B.png"></img>
+                <img class="carta" src="assets/cartas/11O.png"></img> -->
+            </div>
+        </div>
+    </div>
+
+
+<!-- The Modal -->
+
+<div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <button  type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span id="btnCerrarModal" aria-hidden="true" class="float-right">&times;</span>
+        </button>
+        <div id="textoModal"  class="row col-12">        
+        </div>
+    </div>
+</div>
+</div>
+
+    
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/app-min.js"></script>
+    
+</body>
+</html>
